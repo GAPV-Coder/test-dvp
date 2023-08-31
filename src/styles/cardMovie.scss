@@ -1,0 +1,43 @@
+.movie-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    align-self: center;
+    margin-top: 40px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+    cursor: pointer;
+}
+
+.movie-image {
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.movie-details {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.movie-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.movie-genre {
+	font-size: 0.9rem;
+	color: #666;
+	margin-bottom: 5px;
+}
+
+.movie-votes {
+	font-size: 0.9rem;
+	color: #333;
+}

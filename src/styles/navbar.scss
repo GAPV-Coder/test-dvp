@@ -1,0 +1,72 @@
+@import "variables";
+
+.navbar {
+    background-color: $primary-color;
+    color: #242323;
+    padding: 5px 0;
+    display: flex;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-toggle {
+    display: block;
+    cursor: pointer;
+
+    @media (min-width: 769px) {
+        display: none;
+    }
+}
+
+.show-nav {
+    display: block;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: 769px) {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.nav-option {
+    font-size: large;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: $secondary-color;
+    }
+
+    @media (max-width: 768px) {
+        flex: 1;
+    }
+
+}
+
+.nav-options {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-options {
+        display: none;
+    }
+}
